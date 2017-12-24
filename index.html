@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lotto Number Generator</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        
+        <script type="text/javascript">
+            function myFunction(){
+                document.getElementById("ball1").innerHTML = Math.round(Math.random()*74)+1;
+                document.getElementById("ball2").innerHTML = Math.round(Math.random()*74)+1;
+                document.getElementById("ball3").innerHTML = Math.round(Math.random()*74)+1;
+                document.getElementById("ball4").innerHTML = Math.round(Math.random()*74)+1;
+                document.getElementById("ball5").innerHTML = Math.round(Math.random()*74)+1;
+                document.getElementById("ball6").innerHTML = Math.round(Math.random()*14)+1;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h1>LOTTO NUMBER GENERATOR</h1>
+    
+        <button type="button" onclick="myFunction()">Generate</button>
+        
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+        <div id="ball3"></div>
+        <div id="ball4"></div>
+        <div id="ball5"></div>
+        <div style="background-color: gold" id="ball6"></div>
+
+    </body>
+</html>
+
